@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<div class="row">
+    <h3>Gallery</h3>
+</div>
+<div class="row">
+    <div class="gallery" th:each="name : ${names}">
+        <!--<td th:with="picUrl=${name}"><img th:src="@{/img/uploaded-images/{image}(image=${picUrl})}"></td> -->
+        <td th:with="picUrl=${name}"><img th:src="@{/img/uploaded-images/{name}(name=${picUrl})}"></td>
+    </div>
+</div>
+</body>
+</html>

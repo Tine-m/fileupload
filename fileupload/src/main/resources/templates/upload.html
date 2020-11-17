@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+<h1>Spring - File Upload Demo</h1>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <th:label path="file">Select a file to upload</th:label>
+    <input type="file" name="file"/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
